@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoop-A-Doo</title>
+    <link rel="stylesheet" href="ice.css">
+    <style>
+        .flavors {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .flavor-item {
+            width: 23%; /* Adjust this to control the size of each flavor box */
+            margin: 10px;
+            text-align: center;
+        }
+
+        .flavor-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .pricing {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Offer Section */
+        .offer-section {
+            background-color: #f8d7da;
+            color: #721c24;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .offer-section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .offer-section p {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .offer-button {
+            background-color: #28a745;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .offer-button:hover {
+            background-color: #883e21;
+        }
+
+        /* Toppings Section */
+        .toppings {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f1f1f1;
+        }
+
+        .toppings h2 {
+            font-size: 2.5em;
+            color: #2566df;
+            margin-bottom: 20px;
+        }
+
+        .topping-item {
+            display: inline-block;
+            width: 20%;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .topping-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .topping-item p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRemteXeJNturj5CU0diSFLUsLHHckdcUtbBw&s" alt="Scoop-A-Doo Logo">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order-now">Order Now</a></li>
+            <li><a href="#reviews">Customer Reviews</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <header>
+            <h1>Welcome to Scoop-A-Doo!</h1>
+            <h3>FROM OUR CONE TO YOUR HEART!</h3>
+        </header>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Scoop-A-Doo, we don't just serve ice cream — we craft delightful experiences that will tantalize your taste buds. From rich, creamy textures to an explosion of unique and exciting flavors, we are on a mission to redefine your dessert cravings. Our menu features innovative, handpicked flavors that you'll find nowhere else, ranging from sweet classics to exotic, one-of-a-kind creations.</p>
+        <p>Every scoop is a journey into a world of joy, as we carefully select the finest ingredients to ensure every bite is filled with pure happiness.</p>
+        <p>So come, treat yourself to the magic of Scoop-A-Doo — where every visit is a celebration of flavor, fun, and unforgettable moments!</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="flavors">
+        <h2>New Delightful Flavours</h2>
+
+        <!-- First Row - 4 images -->
+        <div class="flavor-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQxQ7aZcyC_TWiQu2uJoXMjETX7n3oroff9w&sonclick=" onclick="this.classList.toggle('clicked')">
+            <p>Strawberry Dream</p>
+            <p class="pricing">₹120</p>
+        </div>
+        <div class="flavor-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShkk4wyYMNPJOMAZ0vTUyPI5YvHH-Wkq0ctA&s" onclick="this.classList.toggle('clicked')">
+            <p>Chocolate Bliss</p>
+            <p class="pricing">₹150</p>
+        </div>
+        <div class="flavor-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagfSdNIyzqqXRwMeS9FuT6pm8xovAuPjnDw&s" onclick="this.classList.toggle('clicked')">
+            <p>Exotic Mango</p>
+            <p class="pricing">₹175</p>
+        </div>
+        <div class="flavor-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXT5xSmYhWcALCbUiKzIIHjaZcmoxl_P4nCFAlySNYcQrHlaQnx3samTz7eJRY3fdaNxc&usqp=CAU" onclick="this.classList.toggle('clicked')">
+            <p>Blueberry Delightful</p>
+            <p class="pricing">₹210</p>
+        </div>
+
+        <!-- Second Row - 3 images -->
+        <div class="flavor-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMTw_HUb6qtoKrU7ahoMLw-mj6NI3uLT0jfg&s" onclick="this.classList.toggle('clicked')">
+            <p>Coconut Burst</p>
+            <p class="pricing">₹250</p>
+        </div>
+        <div class="flavor-item">
+            <img src="https://www.urbanbakes.com/wp-content/uploads/2019/05/Red-Velvet-Ice-Cream-urbanbakes.com-6.1.jpg" onclick="this.classList.toggle('clicked')">
+            <p>Red Velvet</p>
+            <p class="pricing">₹250</p>
+        </div>
+        <div class="flavor-item">
+            <img src="https://feelslikehomeblog.com/wp-content/uploads/2022/02/Mint-Chocolate-Chip-Ice-Cream-recipe-FB.png" onclick="this.classList.toggle('clicked')">
+            <p>Mint Chocolate Chip</p>
+            <p class="pricing">₹230</p>
+        </div>
+
+        <!-- Third Row - Remaining 3 images -->
+        <div class="flavor-item">
+            <img src="https://recipes.timesofindia.com/thumb/52500416.cms?width=1200&height=900" onclick="this.classList.toggle('clicked')">
+            <p>Banana Split</p>
+            <p class="pricing">₹255</p>
+        </div>
+        <div class="flavor-item">
+            <img src="https://www.modernhoney.com/wp-content/uploads/2023/08/Chocolate-Chip-Cookie-Dough-Ice-Cream-1.jpg" onclick="this.classList.toggle('clicked')">
+            <p>Cookie Dough</p>
+            <p class="pricing">₹245</p>
+        </div>
+        <div class="flavor-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT34eBr0KW5Q9-NpZ3DC-Z7Fpf_lbnP6famzSlCV-evtU7pgFzeKnvUHTAzP0aKkTxDZQQ&usqp=CAU" onclick="this.classList.toggle('clicked')">
+            <p>Pistachio Delight</p>
+            <p class="pricing">₹250</p>
+        </div>
+
+        <!-- Toppings Section -->
+        <section class="toppings">
+            <h2>Add Some Toppings!</h2>
+            <div class="topping-item">
+                <img src="
+                https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR_5bqb00h4jg0b_L6Vxpvtx_mDWKITb1XoBgjDEXCVrKSbiMq8uuY39dy7anJm_V1YQA&usqp=CAU" alt="Chocolate Chips">
+                <p>Chocolate Chips</p>
+            </div>
+            <div class="topping-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-HgPcDMTnpsrAJCbqj84PflZ4Nnsxc0eAyvYR8bYg-9TehW_br5wNpYGnYg59mtSWJxg&usqp=CAU" alt="Crushed Biscuits">
+                <p>Crushed Biscuits</p>
+            </div>
+            <div class="topping-item">
+                <img src="https://cpimg.tistatic.com/6767357/b/4/natural-walnuts.jpg" alt="Crushed Walnuts">
+                <p>Crushed Walnuts</p>
+            </div>
+            <div class="topping-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjwrmmy7oh6poMVHRCGi1FXRWvbmQMsBcyI-uJk4hQF66a_a-sZoYGweDC2bQVRts6et8&usqp=CAU" alt="Chopped Strawberries">
+                <p>Chopped Strawberries</p>
+            </div>
+            <div class="topping-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQoBNzXdxJL07PEivJVNlF7F17lxkplKExdQ&s" alt="Granola">
+                <p>Granola</p>
+            </div>
+            <div class="topping-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7rcVLoPtyuQMjxa2tS7ga-v-jdQfNRsLORc8TAAsiO5VmQXTXHBvssdaYKV3BvMpSZUg&usqp=CAU" alt="Caramel Syrup">
+                <p>Caramel Syrup</p>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- Special Offer Section -->
+    <div id="special-offer">
+        <h2>Exclusive Special Offer!</h2>
+        <p>Get an amazing deal when you order today!</p>
+        <div class="offer-details">Order now and get 20% off!</div>
+        <button id="offer-button">Claim Your Offer</button>
+    </div>
+
+    <!-- Order Now Section -->
+    <section id="order-now" class="order-now">
+        <h2>Order Now</h2>
+        <div class="order-form">
+            <form id="order-form">
+                <div class="input-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="tel" id="phone-number" name="phone-number" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="flavor">Select Flavor:</label>
+                    <select id="flavor" name="flavor" required>
+                        <option value="strawberry">Strawberry Dream</option>
+                        <option value="chocolate">Chocolate Bliss</option>
+                        <option value="red-velvet">Red Velvet</option>
+                        <option value="mango">Exotic Mango</option>
+                        <option value="blueberry">Blueberry Delightful</option>
+                        <option value="coconut">Coconut Burst</option>
+                        <option value="mint">Mint Chocolate Chip</option>
+                        <option value="banana">Banana Split</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="location">Delivery Location:</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="reviews" class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <p>"The best ice cream I've ever had! The chocolate bliss is to die for!"</p>
+            <strong>- Ananya, Maharastra</strong>
+        </div>
+        <div class="review">
+            <p>"A great experience! Loved the exotic mango flavor and the sprinkles!"</p>
+            <strong>- Rahul, Karnataka</strong>
+        </div>
+        <div class="review">
+            <p>"Amazing service and delicious ice cream. I will definitely order again!"</p>
+            <strong>- Priya, New Delhi</strong>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Shop Address:</strong> Scoop-A-Doo,Food Street,Cityville, India</p>
+        <p><strong>Phone:</strong> +91 9876543210</p>
+        <p><strong>Email:</strong> contact@Scoop-A-Dooicecreams.com</p>
+        <a href="https://www.yourwebsite.com/order" target="_blank" class="order-link">Order Online</a>
+    </section>
+
+    <script src="ice.js"></script>
+</body>
+</html>
